@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+}
+
+@keyframes Wheatmove {
+  0% {
+    width: 5vw;
+  }
+	100% {
+    width: 1vw;
+	}
+}
+
+.autumn-body {
+  position: fixed;
+  overflow: hidden;
+  width: 15vw;
+  height: 100vh;
+  background: linear-gradient(#afeefe, #5bddfe, #afeefe, #fff);
+}
+
+.wheats {
+  position: absolute;
+  bottom: 0;
+  height: 6vw;
+  width: 15vw;
+  background: linear-gradient(#feea25, #fdc700, #f8b000, #f39900);
+}
+
+.wheat {
+  position: absolute;
+  border-left: 0.2vw solid #feea25;
+  height: 3vw;
+  width: 1vw;
+  border-top-left-radius: 10vw;
+}
+
+.scarecrow {
+  position: absolute;
+  bottom: 7vw;
+  left: 7vw;
+}
+
+.foot {
+  position: absolute;
+  height: 3vw;
+  width: 0.4vw;
+  background: #6c0101;
+  z-index: 1;
+}
+
+.foot:before {
+  content: '';
+  position: absolute;
+  width: 0.15vw;
+  height: 1vw;
+  background: #6c0101;
+  transform: translate(0.4vw, 1vw) rotate(45deg);
+}
+
+.foot:after {
+  content: '';
+  position: absolute;
+  border-left: 0.2vw solid #feea25;
+  height: 3vw;
+  width: 1vw;
+  border-top-left-radius: 10vw;
+  animation: 2.65s linear 0s infinite normal none running Wheatmove;
+}
+
+.clothes {
+  position: absolute;
+  width: 3.4vw;
+  height: 3vw;
+  background: linear-gradient(45deg, #dd9900, #9e5f01);
+  bottom: 0vw;
+  left: -1.5vw;
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+  box-shadow: 1px 1px 3px 3px #ccc;
+}
+
+.clothes:before {
+  content: '';
+  position: absolute;
+  width: 2.5vw;
+  height: 1.5vw;
+  background: linear-gradient(45deg, #fdc700, #bd7c00);
+  left: -2.4vw;
+  border-top-left-radius: 0.2vw;
+  border-bottom-left-radius: 0.8vw;
+}
+
+.clothes:after {
+  content: '';
+  position: absolute;
+  width: 2.5vw;
+  height: 1.5vw;
+  background: linear-gradient(45deg, #b06e00, #8a5601);
+  left: 3.3vw;
+  border-top-right-radius: 0.2vw;
+  border-bottom-right-radius: 0.8vw;
+  box-shadow: 8px 0px 8px 0 #ccc;
+}
+
+.scarecrow-body {
+  transform: rotate(5deg);
+}
+
+.left-hand {
+  position: absolute;
+  left: -4.8vw;
+  bottom: 2.5vw;
+  width: 0.9vw;
+  height: 0.3vw;
+  background: #6c0101;
+}
+
+.left-hand:before {
+  content: '';
+  position: absolute;
+  height: 0.3vw;
+  width: 0.3vw;
+  background: #6c0101;
+  bottom: 0.3vw;
+  border-top-right-radius: 0.4vw;
+}
+
+.right-hand {
+  position: absolute;
+  left: 4.3vw;
+  bottom: 2.3vw;
+  width: 1.2vw;
+  height: 0.3vw;
+  background: #6c0101;
+}
+
+.right-hand:before {
+  content: '';
+  position: absolute;
+  width: 0.2vw;
+  height: 0.5vw;
+  background: #6c0101;
+  left: 0.6vw;
+  top: -0.3vw;
+  transform: rotate(24deg);
+}
+
+.head {
+  position: absolute;
+  bottom: 2.3vw;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 3vw;
+  background: #fff;
+  left: -1.4vw;
+  z-index: 1;
+}
+
+.hair-one {
+  position: absolute;
+  background: linear-gradient(45deg, #cb9801, #cb9801, #9e5f01);
+  height: 2.6vw;
+  width: 0.1vw;
+  transform: rotate(22deg);
+  top: 0.2vw;
+}
+
+.eye {
+  position: absolute;
+  width: 0.3vw;
+  height: 0.3vw;
+  background: #333;
+  top: 1.5vw;
+  left: 0.8vw;
+  border-radius: 10vw;
+}
+
+.eye:before {
+  content: '';
+  position: absolute;
+  width: 0.3vw;
+  height: 0.3vw;
+  background: #333;
+  top: 0.1vw;
+  left: 2vw;
+  border-radius: 10vw;
+}
+
+.mouth {
+  position: absolute;
+  border-bottom: 2px solid red;
+  width: 2.6vw;
+  height: 3vw;
+  border-radius: 1.7vw;
+  left: 0.65vw;
+  top: 0.2vw;
+}
+
+.face {
+  position: absolute;
+  top: 1.7vw;
+  width: 1vw;
+  height: 1vw;
+  background: pink;
+  filter: blur(10px);
+}
+
+.face:before {
+  content: '';
+  position: absolute;
+  width: 1vw;
+  left: 2.7vw;
+  height: 1vw;
+  background: pink;
+  filter: blur(10px);
+}
+
+.hat {
+  position: absolute;
+  width: 6vw;
+  height: 1vw;
+  background: linear-gradient(45deg, #dd9900, #955c01);
+  border-radius: 50%;
+  left: -1vw;
+  transform: rotate(5deg);
+  box-shadow: 7px 0 10px 1px #ddd;
+  z-index: 1;
+}
+
+.hat:before {
+  content: '';
+  position: absolute;
+  width: 3vw;
+  height: 0.5vw;
+  background: #333;
+  left: 1.4vw;
+  bottom: 0.7vw;
+  border-radius: 4px;
+}
+
+.hat:after {
+  content: '';
+  position: absolute;
+  width: 2.8vw;
+  height: 1vw;
+  background: linear-gradient(45deg, #f8b000, #cb8700, #b06e00, #593601);
+  bottom: 1.2vw;
+  left: 1.5vw;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+}
