@@ -437,10 +437,10 @@ body {
 
 .light {
   position: absolute;
-  height: 0.9vw;
+  height: 0.3vw;
   width: 100%;
-  background: linear-gradient(45deg, transparent, yellow);
-  box-shadow: 0 0 19px 4px #fff;
+  background: yellow;
+  box-shadow: 0 0 20px 7px #fff;
 }
 
 .light:first-child {
