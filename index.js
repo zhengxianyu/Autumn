@@ -28,7 +28,7 @@ $(function() {
         numberRandom(15.5, -0.5) +
       'vw; bottom: ' +
         numberRandom(5.5, -2) +
-      'vw; animation: Wheatmove ' +
+      'vw; animation: WheatMove ' +
         time +
       's linear infinite;';
 

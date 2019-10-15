@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-@keyframes Wheatmove {
+@keyframes WheatMove {
   0% {
     width: 5vw;
   }
@@ -17,6 +17,15 @@ body {
   }
 	100% {
     left: 0;
+	}
+}
+
+@keyframes ScarecrowMove {
+  0% {
+    margin-left: 0.1vw;
+  }
+	100% {
+    margin-left: -0.1vw;
 	}
 }
 
@@ -76,7 +85,7 @@ body {
   height: 3vw;
   width: 1vw;
   border-top-left-radius: 10vw;
-  animation: 2.65s linear 0s infinite normal none running Wheatmove;
+  animation: 2.65s linear 0s infinite normal none running WheatMove;
 }
 
 .clothes {
@@ -89,6 +98,7 @@ body {
   border-bottom-left-radius: 1vw;
   border-bottom-right-radius: 1vw;
   box-shadow: 1px 1px 3px 3px #ccc;
+  animation: ScarecrowMove ease-in 3s infinite;
 }
 
 .clothes:before {
@@ -122,7 +132,7 @@ body {
   position: absolute;
   left: -4.8vw;
   bottom: 2.5vw;
-  width: 0.9vw;
+  width: 1vw;
   height: 0.3vw;
   background: #6c0101;
 }
@@ -139,7 +149,7 @@ body {
 
 .right-hand {
   position: absolute;
-  left: 4.3vw;
+  left: 4.2vw;
   bottom: 2.3vw;
   width: 1.2vw;
   height: 0.3vw;
@@ -175,6 +185,7 @@ body {
   width: 0.1vw;
   transform: rotate(22deg);
   top: 0.2vw;
+  animation: ScarecrowMove ease-in 3s infinite;
 }
 
 .eye {
