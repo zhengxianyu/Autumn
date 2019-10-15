@@ -380,7 +380,7 @@ body {
 }
 
 .cloud-two {
-  top: 5vw;
+  top: 6vw;
   left: 10vw;
   animation: flyMove 35s linear infinite;
 }
