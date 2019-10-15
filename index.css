@@ -11,6 +11,15 @@ body {
 	}
 }
 
+@keyframes SpikeMove {
+  0% {
+    left: 1vw;
+  }
+	100% {
+    left: 0;
+	}
+}
+
 .autumn-body {
   position: fixed;
   overflow: hidden;
@@ -25,6 +34,8 @@ body {
   height: 6vw;
   width: 15vw;
   background: linear-gradient(#feea25, #fdc700, #f8b000, #f39900);
+  background: linear-gradient(#feea25, #fdc700, #f8b000, #f39900, #f8b000, #fdc700, #feea25);
+  background: linear-gradient(#feea25, #feea25, #feea25);
 }
 
 .wheat {
@@ -33,6 +44,7 @@ body {
   height: 3vw;
   width: 1vw;
   border-top-left-radius: 10vw;
+  animation: Wheatmove 5s linear infinite;
 }
 
 .scarecrow {
@@ -249,4 +261,15 @@ body {
   left: 1.5vw;
   border-top-left-radius: 1vw;
   border-top-right-radius: 1vw;
+}
+
+.wheat-spike {
+  width: 0.2vw;
+  height: 0.2vw;
+  position: absolute;
+  background: linear-gradient(46deg, #feea25, #fdca03);
+  top: 0.4vw;
+  border-radius: 1vw;
+  animation: SpikeMove 5s infinite;
+  animation-delay: 2s;
 }
