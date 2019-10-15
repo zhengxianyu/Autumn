@@ -29,12 +29,58 @@ body {
 	}
 }
 
+@keyframes lightMoveOne {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lightMoveTwo {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+
+@keyframes lightMoveThree {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes lightMoveFour {
+  0% {
+    transform: rotate(135deg);
+  }
+  100% {
+    transform: rotate(495deg);
+  }
+}
+
+@keyframes flyMove {
+  from {
+    transform: translateX(-15vw);
+	}
+	to {
+    transform: translateX(15vw);
+	}
+}
+
 .autumn-body {
   position: fixed;
   overflow: hidden;
   width: 15vw;
   height: 100vh;
   background: linear-gradient(#afeefe, #5bddfe, #afeefe, #fff);
+  background: linear-gradient(orange, yellow, #fff, #fff);
 }
 
 .wheats {
@@ -42,8 +88,6 @@ body {
   bottom: 0;
   height: 6vw;
   width: 15vw;
-  /* background: linear-gradient(#feea25, #fdc700, #f8b000, #f39900);
-  background: linear-gradient(#feea25, #fdc700, #f8b000, #f39900, #f8b000, #fdc700, #feea25); */
   background: linear-gradient(#feea25, #feea25, #feea25);
 }
 
@@ -310,4 +354,99 @@ body {
   transform: rotate(-11deg);
   margin-left: -0.2vw;
   top: 0.8vw;
+}
+
+.cloud-one, .cloud-two, .cloud-three {
+  z-index: -1;
+  background: #fff;
+  width: 5vw;
+  height: 2vw;
+  border-radius: 50px;
+  position: absolute;
+  top: 3vw;
+  animation: flyMove 30s infinite;
+}
+
+.cloud-one::before, .cloud-two:before, .cloud-three:before {
+  background: #fff;
+  content: "";
+  width: 3vw;
+  height: 1.3vw;
+  position: absolute;
+  top: -1vw;
+  left: 0.7vw;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+}
+
+.cloud-two {
+  top: 5vw;
+  left: 10vw;
+  animation: flyMove 35s linear infinite;
+}
+
+.cloud-three {
+  top: 13vw;
+  left: 5vw;
+}
+
+.sun {
+  position: absolute;
+  margin: 2vw 0 0 2vw;
+  width: 8vw;
+  height: 8vw;
+  right: 0;
+}
+
+.solar-core {
+  position: absolute;
+  background: yellow;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 100px;
+  margin-top: 1.5vw;
+  box-shadow: 0 0 30px 18px #fff;
+}
+
+.sunlight {
+  position: absolute;
+  width: 2px;
+  height: 9vw;
+  left: 36%;
+}
+
+.sunlight:nth-child(2) {
+  transform: rotate(45deg);
+  animation: lightMoveTwo 20s linear infinite;
+}
+
+.sunlight:nth-child(3) {
+  transform: rotate(90deg);
+  animation: lightMoveThree 20s linear infinite;
+}
+
+.sunlight:nth-child(4) {
+  transform: rotate(135deg);
+  animation: lightMoveFour 20s linear infinite;
+}
+
+.sunlight:nth-child(5) {
+  transform: rotate(0);
+  animation: lightMoveOne 20s linear infinite;
+}
+
+.light {
+  position: absolute;
+  height: 13px;
+  width: 100%;
+  background: linear-gradient(45deg, transparent, yellow);
+  box-shadow: 0 0 19px 4px #fff;
+}
+
+.light:first-child {
+  top: 0;
+}
+
+.light:nth-child(2) {
+  bottom: 0;
 }
