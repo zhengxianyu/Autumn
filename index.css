@@ -410,7 +410,7 @@ body {
 
 .sunlight {
   position: absolute;
-  width: 2px;
+  width: 0.1vw;
   height: 9vw;
   left: 36%;
 }
@@ -437,7 +437,7 @@ body {
 
 .light {
   position: absolute;
-  height: 13px;
+  height: 0.9vw;
   width: 100%;
   background: linear-gradient(45deg, transparent, yellow);
   box-shadow: 0 0 19px 4px #fff;
