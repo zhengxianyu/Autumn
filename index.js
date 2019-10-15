@@ -4,8 +4,22 @@ $(function() {
     return num;
   }
 
+  function createWheatSpike(time, wheat) {
+    for (let index = 0; index < 6; index ++) {
+      let grain = document.createElement('div');
+      grain.className = 'grain';
+      grain.style =
+        'animation: SpikeMove ' +
+          time +
+        's linear infinite;';
+
+        wheat.appendChild(grain);
+    }
+    return wheat;
+  }
+
   // 麦子
-  for (let index = 0; index < 200; index ++) {
+  for (let index = 0; index < 100; index ++) {
     let wheat = document.createElement('div');
     let time = numberRandom(3, 1);
     wheat.className = 'wheat';
@@ -18,21 +32,7 @@ $(function() {
         time +
       's linear infinite;';
 
-    let wheatSpike = document.createElement('div');
-    wheatSpike.className = 'wheat-spike';
-    wheatSpike.style =
-      'animation: SpikeMove ' +
-        time +
-      's linear infinite;';
-    wheat.appendChild(wheatSpike);
-
-    // let wheatSpikeTwo = document.createElement('div');
-    // wheatSpikeTwo.className = 'wheat-spike';
-    // wheatSpikeTwo.style =
-    //   'animation: SpikeMove ' +
-    //     time +
-    //   's linear infinite; top: 0.6vw; left: 0.2vw;';
-    // wheat.appendChild(wheatSpikeTwo);
+    wheat = createWheatSpike(time, wheat);
 
     let wheats = document.getElementById('wheats');
     wheats.appendChild(wheat);

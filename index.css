@@ -33,8 +33,8 @@ body {
   bottom: 0;
   height: 6vw;
   width: 15vw;
-  background: linear-gradient(#feea25, #fdc700, #f8b000, #f39900);
-  background: linear-gradient(#feea25, #fdc700, #f8b000, #f39900, #f8b000, #fdc700, #feea25);
+  /* background: linear-gradient(#feea25, #fdc700, #f8b000, #f39900);
+  background: linear-gradient(#feea25, #fdc700, #f8b000, #f39900, #f8b000, #fdc700, #feea25); */
   background: linear-gradient(#feea25, #feea25, #feea25);
 }
 
@@ -44,7 +44,6 @@ body {
   height: 3vw;
   width: 1vw;
   border-top-left-radius: 10vw;
-  animation: Wheatmove 5s linear infinite;
 }
 
 .scarecrow {
@@ -263,13 +262,41 @@ body {
   border-top-right-radius: 1vw;
 }
 
-.wheat-spike {
-  width: 0.2vw;
-  height: 0.2vw;
+.grain {
+  width: 0.3vw;
+  height: 0.1vw;
   position: absolute;
   background: linear-gradient(46deg, #feea25, #fdca03);
   top: 0.4vw;
   border-radius: 1vw;
   animation: SpikeMove 5s infinite;
-  animation-delay: 2s;
+  transform: rotate(112deg);
+}
+
+.grain:nth-child(2) {
+  top: 0.3vw;
+  margin-left: 0.2vw;
+}
+
+.grain:nth-child(3) {
+  top: 0.6vw;
+  margin-left: -0.2vw;
+}
+
+.grain:nth-child(4) {
+  transform: rotate(-11deg);
+  margin-left: 0.4vw;
+  top: 0.4vw;
+}
+
+.grain:nth-child(5) {
+  transform: rotate(-11deg);
+  margin-left: 0.1vw;
+  top: 0.6vw;
+}
+
+.grain:nth-child(6) {
+  transform: rotate(-11deg);
+  margin-left: -0.2vw;
+  top: 0.8vw;
 }
