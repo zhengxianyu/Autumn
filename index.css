@@ -363,7 +363,7 @@ body {
   height: 2vw;
   border-radius: 50px;
   position: absolute;
-  top: 3vw;
+  top: 7vw;
   animation: flyMove 30s infinite;
 }
 
@@ -380,19 +380,19 @@ body {
 }
 
 .cloud-two {
-  top: 6vw;
+  top: 11vw;
   left: 10vw;
   animation: flyMove 35s linear infinite;
 }
 
 .cloud-three {
-  top: 13vw;
+  top: 16vw;
   left: 5vw;
 }
 
 .sun {
   position: absolute;
-  margin: 2vw 0 0 2vw;
+  margin: 6vw 0 0 2vw;
   width: 8vw;
   height: 8vw;
   right: 0;
