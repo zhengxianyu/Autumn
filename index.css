@@ -79,8 +79,8 @@ body {
   overflow: hidden;
   width: 15vw;
   height: 100vh;
-  background: linear-gradient(#afeefe, #5bddfe, #afeefe, #fff);
   background: linear-gradient(orange, yellow, #fff, #fff);
+  background: linear-gradient(#bd330c, orange, #fff, #fff);
 }
 
 .wheats {
@@ -410,7 +410,7 @@ body {
 
 .sunlight {
   position: absolute;
-  width: 0.1vw;
+  /* width: 0.1vw; */
   height: 9vw;
   left: 36%;
 }
