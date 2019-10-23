@@ -80,7 +80,7 @@ body {
   width: 15vw;
   height: 100vh;
   background: linear-gradient(orange, yellow, #fff, #fff);
-  background: linear-gradient(#bd330c, orange, #fff, #fff);
+  background: linear-gradient(#fb6000, #fbd800, #fff, #fff);
 }
 
 .wheats {
@@ -400,7 +400,7 @@ body {
 
 .solar-core {
   position: absolute;
-  background: yellow;
+  background: radial-gradient(#fff, yellow);
   width: 6vw;
   height: 6vw;
   border-radius: 100px;
