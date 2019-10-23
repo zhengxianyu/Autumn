@@ -357,7 +357,6 @@ body {
 }
 
 .cloud-one, .cloud-two, .cloud-three {
-  z-index: -1;
   background: #fff;
   width: 5vw;
   height: 2vw;
